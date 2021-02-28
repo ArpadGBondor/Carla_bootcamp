@@ -29,6 +29,7 @@ function myFunction() {
   if ((document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) 
     && (window.innerWidth > 575))  {
     document.getElementById("logo").className = "logo-scroll";
+    document.getElementById('header-nav').style.heigth = "103px"; 
    // document.getElementById('header-nav').style.backgroundColor = "#f6f4f4";
   } else {
     document.getElementById("logo").className = "";
