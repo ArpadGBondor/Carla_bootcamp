@@ -26,14 +26,13 @@ $('.navbar-collapse a').click(function(){
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
-  if ((document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) 
-    && (window.innerWidth > 575))  {
+  if ((document.documentElement.scrollTop > 550)  && (window.innerWidth > 575))  {
     document.getElementById("logo").className = "logo-scroll";
-    document.getElementById('header-nav').style.height = "103px"; 
-    document.getElementById('header-nav').style.border = "1px solid black";    
-   } else {
+    // document.getElementById('header-nav').style.height = "103px"; 
+    // document.getElementById('header-nav').style.border = "1px solid black";    
+   } else if ((document.documentElement.scrollTop < 450)  && (window.innerWidth > 575)) {
     document.getElementById("logo").className = "";
-    document.getElementById('header-nav').removeAttribute("style");
+    // document.getElementById('header-nav').removeAttribute("style");
   }
 
 }
