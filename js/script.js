@@ -30,11 +30,10 @@ function myFunction() {
     && (window.innerWidth > 575))  {
     document.getElementById("logo").className = "logo-scroll";
     document.getElementById('header-nav').style.height = "103px"; 
-   // document.getElementById('header-nav').style.backgroundColor = "#f6f4f4";
-  } else {
+    document.getElementById('header-nav').style.border = "1px solid black";    
+   } else {
     document.getElementById("logo").className = "";
-  //  document.getElementById('header-nav').style.backgroundColor = "#fff9f6";
-  // document.getElementById('header-nav').removeAttribute("style");
+    document.getElementById('header-nav').removeAttribute("style");
   }
 
 }
