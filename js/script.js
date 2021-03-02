@@ -27,11 +27,11 @@ window.onscroll = function() {myFunction()};
 
 function myFunction() {
   if ((document.documentElement.scrollTop > 550)  && (window.innerWidth > 575))  {
-    document.getElementById("logo").className = "logo-scroll";
+    document.getElementById("logo").classList.add("logo-scroll");
     // document.getElementById('header-nav').style.height = "103px"; 
     // document.getElementById('header-nav').style.border = "1px solid black";    
    } else if ((document.documentElement.scrollTop < 450)  && (window.innerWidth > 575)) {
-    document.getElementById("logo").className = "";
+    document.getElementById("logo").classList.remove("logo-scroll");
     // document.getElementById('header-nav').removeAttribute("style");
   }
 
