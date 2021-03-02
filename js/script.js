@@ -34,6 +34,7 @@ function myFunction() {
   } else {
     document.getElementById("logo").className = "";
   //  document.getElementById('header-nav').style.backgroundColor = "#fff9f6";
+  // document.getElementById('header-nav').removeAttribute("style");
   }
 
 }
